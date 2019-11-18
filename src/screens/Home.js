@@ -1,5 +1,5 @@
 import React from 'react';
-import {View ,Text, TouchableOpacity, ImageBackground ,Image} from 'react-native';
+import {View ,Text, TouchableOpacity, ImageBackground ,Image, Linking} from 'react-native';
 import {headerStyles as styles} from 'C:/FalTeller/src/styles.js';
 
 class Home extends React.Component{
@@ -39,18 +39,18 @@ class Home extends React.Component{
                 </View>
 
                 <View style={styles.socialButtonContainer}>
+                    
                     <TouchableOpacity style={styles.LogoTwitter}
-                    onPress={() => {
-                            this.props.navigation.navigate ('firstpage')           
-                        }}>
+                    onPress={() => Linking.openURL('https://www.twitter.com/leacof')
+                    .catch(err => console.error('An error occurred', err))}>
                     <Image
                         source={require ('C:/FalTeller/src/assets/twitter.png')}
                         style={styles.socialLogoimg}/>
                     </TouchableOpacity>
+                    
                     <TouchableOpacity style={styles.LogoInstagram}
-                    onPress={() => {
-                            this.props.navigation.navigate ('firstpage')           
-                        }}>
+                    onPress={() => Linking.openURL('https://www.instagram.com/leacofapp')
+                    .catch(err => console.error('An error occurred', err))}>
                     <Image
                         source={require ('C:/FalTeller/src/assets/instagram.png')}
                         style={styles.socialLogoimg}/>
@@ -59,9 +59,8 @@ class Home extends React.Component{
 
                 <View style={styles.starsContainer}>
                     <TouchableOpacity style={styles.LogoStars}
-                    onPress={() => {
-                            this.props.navigation.navigate ('firstpage')           
-                        }}>
+                    onPress={() => Linking.openURL('https://play.google.com/store/apps/')
+                    .catch(err => console.error('An error occurred', err))}>
                     <Image
                         source={require ('C:/FalTeller/src/assets/stars.png')}
                         style={styles.socialLogoimg}/>
