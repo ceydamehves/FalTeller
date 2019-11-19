@@ -18,7 +18,7 @@ class KahveFali extends React.Component {
                 <View style={[styles.columnContainer, styles.columnContainerEven]}>                  
                     <TouchableOpacity style={styles.FalciButton}
                     onPress={() => {
-                            this.props.navigation.navigate ('KahveFali')           
+                            this.props.navigation.navigate ('Falcilar')           
                     }}>
                         <View style={styles.falciRow}>
                         <Image
@@ -117,6 +117,13 @@ class KahveFali extends React.Component {
                 }}>
                     <Image
                     source={require ('C:/FalTeller/src/assets/home.png')}
+                    style={styles.bottomLogo}/></TouchableOpacity>
+                <TouchableOpacity
+                onPress={() => {
+                        this.props.navigation.navigate ('PayScreen')           
+                }}>
+                    <Image
+                    source={require ('C:/FalTeller/src/assets/gift.png')}
                     style={styles.bottomLogo}/></TouchableOpacity>
                 </View>
             </View>
