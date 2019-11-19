@@ -7,6 +7,7 @@ class Home extends React.Component{
        
         return(
             <View style={{flex:1}}>
+                
                 <ImageBackground
                     style={styles.backContainer}
                     source={require ('C:/FalTeller/src/assets/bg.jpg')}>
@@ -24,7 +25,7 @@ class Home extends React.Component{
                 <View style={styles.Line}></View>                
 
                 <View style={styles.mainButtonContainer}>
-                    <TouchableOpacity style={styles.MainButton}
+                    <TouchableOpacity style={styles.MainButton} 
                     onPress={() => {
                             this.props.navigation.navigate ('FalTipi')           
                         }}>
@@ -35,6 +36,12 @@ class Home extends React.Component{
                             this.props.navigation.navigate ('GecmisFal')           
                         }}>
                     <Text style={styles.text}>Geçmiş Fallar</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.MainButton}
+                    onPress={() => {
+                            this.props.navigation.navigate ('InfoScreen')           
+                        }}>
+                    <Text style={styles.text}>Bilgilerim</Text>
                     </TouchableOpacity>
                 </View>
 
