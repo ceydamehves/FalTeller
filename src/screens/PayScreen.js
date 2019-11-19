@@ -2,7 +2,7 @@ import React from 'react';
 import {View,ImageBackground,Text,TouchableOpacity,Image} from 'react-native';
 import {headerStyles as styles} from 'C:/FalTeller/src/styles.js';
 
-class GecmisFal extends React.Component {
+class PayScreen extends React.Component {
     render (){
        
         return(
@@ -10,8 +10,9 @@ class GecmisFal extends React.Component {
                 <ImageBackground
                     style={styles.backContainer}
                     source={require ('C:/FalTeller/src/assets/bg.jpg')}>
-                    <Text>ElFalı</Text>
+                    <Text>Ödeme Sayfası</Text>
                 </ImageBackground>
+
                 <View style={styles.Bottom}>                    
                 <TouchableOpacity
                 onPress={() => {
@@ -39,4 +40,4 @@ class GecmisFal extends React.Component {
         )
 };
 }
-export default GecmisFal;
+export default PayScreen;

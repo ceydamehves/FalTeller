@@ -1,5 +1,5 @@
 import React from 'react';
-import {View,ImageBackground,Text} from 'react-native';
+import {View,ImageBackground,Text,TouchableOpacity,Image} from 'react-native';
 import {headerStyles as styles} from 'C:/FalTeller/src/styles.js';
 
 class GecmisFal extends React.Component {
@@ -12,6 +12,30 @@ class GecmisFal extends React.Component {
                     source={require ('C:/FalTeller/src/assets/bg.jpg')}>
                     <Text>Geçmiş Fallar</Text>
                 </ImageBackground>
+
+                <View style={styles.Bottom}>                    
+                <TouchableOpacity
+                onPress={() => {
+                        this.props.navigation.navigate ('Home')           
+                }}>
+                    <Image
+                    source={require ('C:/FalTeller/src/assets/back.png')}
+                    style={styles.bottomLogo}/></TouchableOpacity>
+                <TouchableOpacity
+                onPress={() => {
+                        this.props.navigation.navigate ('Home')           
+                }}>
+                    <Image
+                    source={require ('C:/FalTeller/src/assets/home.png')}
+                    style={styles.bottomLogo}/></TouchableOpacity>
+                <TouchableOpacity
+                onPress={() => {
+                        this.props.navigation.navigate ('PayScreen')           
+                }}>
+                    <Image
+                    source={require ('C:/FalTeller/src/assets/gift.png')}
+                    style={styles.bottomLogo}/></TouchableOpacity>
+                </View>
             </View>
         )
 };

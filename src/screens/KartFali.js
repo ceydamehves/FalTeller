@@ -1,8 +1,8 @@
 import React from 'react';
-import {View,ImageBackground,Text} from 'react-native';
+import {View,ImageBackground,Text,TouchableOpacity,Image} from 'react-native';
 import {headerStyles as styles} from 'C:/FalTeller/src/styles.js';
 
-class GecmisFal extends React.Component {
+class KartFali extends React.Component {
     render (){
        
         return(
@@ -10,10 +10,35 @@ class GecmisFal extends React.Component {
                 <ImageBackground
                     style={styles.backContainer}
                     source={require ('C:/FalTeller/src/assets/bg.jpg')}>
-                    <Text>KartFalı</Text>
+                    <Text>Tarot Falı</Text>
                 </ImageBackground>
+                
+                <View style={styles.Bottom}>                    
+                <TouchableOpacity
+                onPress={() => {
+                        this.props.navigation.navigate ('FalTipi')           
+                }}>
+                    <Image
+                    source={require ('C:/FalTeller/src/assets/back.png')}
+                    style={styles.bottomLogo}/></TouchableOpacity>
+                <TouchableOpacity
+                onPress={() => {
+                        this.props.navigation.navigate ('Home')           
+                }}>
+                    <Image
+                    source={require ('C:/FalTeller/src/assets/home.png')}
+                    style={styles.bottomLogo}/></TouchableOpacity>
+                <TouchableOpacity
+                onPress={() => {
+                        this.props.navigation.navigate ('PayScreen')           
+                }}>
+                    <Image
+                    source={require ('C:/FalTeller/src/assets/gift.png')}
+                    style={styles.bottomLogo}/></TouchableOpacity>
+                </View>
             </View>
+
         )
 };
 }
-export default GecmisFal;
+export default KartFali;
