@@ -23,7 +23,10 @@ class FalTipi extends React.Component {
                     }}>
                         <Image
                         source={require ('C:/FalTeller/src/assets/coffee.png')}
-                        style={styles.FincanLogo}/>                      
+                        style={styles.FincanLogo}/>      
+                        <Image
+                        source={require ('C:/FalTeller/src/assets/kahve.png')}
+                        style={styles.kahveText}/>                
                     </TouchableOpacity>
                     
                     <TouchableOpacity style={styles.cardButton}
@@ -33,6 +36,9 @@ class FalTipi extends React.Component {
                         <Image
                         source={require ('C:/FalTeller/src/assets/card.png')}
                         style={styles.cardLogo}/>
+                        <Image
+                        source={require ('C:/FalTeller/src/assets/tarot.png')}
+                        style={styles.cardText}/>  
                     </TouchableOpacity>
                     
                     <TouchableOpacity style={styles.FalButton}
@@ -42,6 +48,9 @@ class FalTipi extends React.Component {
                         <Image
                         source={require ('C:/FalTeller/src/assets/hand.png')}
                         style={styles.FincanLogo}/>
+                        <Image
+                        source={require ('C:/FalTeller/src/assets/el.png')}
+                        style={styles.elText}/>  
                     </TouchableOpacity>
 
                     <View style={styles.Bottom}>                    
@@ -59,6 +68,13 @@ class FalTipi extends React.Component {
                         <Image
                         source={require ('C:/FalTeller/src/assets/home.png')}
                         style={styles.bottomLogo}/></TouchableOpacity>
+                    <TouchableOpacity
+                    onPress={() => {
+                            this.props.navigation.navigate ('PayScreen')           
+                    }}>
+                    <Image
+                    source={require ('C:/FalTeller/src/assets/gift.png')}
+                    style={styles.bottomLogo}/></TouchableOpacity>
                     </View>
 
                 </View>
