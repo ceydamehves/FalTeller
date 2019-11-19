@@ -4,14 +4,14 @@ export const headerStyles = StyleSheet.create({
     backContainer: {
         backgroundColor: 'rgba(80, 196, 199, 0.24)',
         position: 'absolute',
-    
+        
         width: Dimensions.get('window').width * 1,
         height: Dimensions.get('window').height * 1,
     },
     MainButton:{
-        marginTop: 30,
+        marginTop: 20,
         alignItems:'center',
-        backgroundColor: 'rgba(142, 113, 10, 0.30)',
+        backgroundColor: 'rgba(201,183,169,0.9)',
         padding: 10,
         borderRadius: 40,
         
@@ -29,19 +29,19 @@ export const headerStyles = StyleSheet.create({
     },
     MainTitle:{
         marginLeft: Dimensions.get('window').width * 0.27,
-        marginTop: 40,
+        marginTop: 30,
         alignItems:'center',
-        backgroundColor: 'rgba(142, 113, 10, 0.30)',
+        backgroundColor: 'rgba(201,183,169,0.9)',
         padding: 10,
         borderRadius: 60,
         width: 180,
     },
     Line:{
         borderWidth: 2,
-        width: Dimensions.get('window').width * 0.51,
-        marginTop: 5,
+        width: Dimensions.get('window').width * 0.515,
+        marginTop: 4,
         marginLeft: Dimensions.get('window').width * 0.24,
-        borderColor:'rgba(89, 56, 5, 0.5)',
+        borderColor:'rgba(89, 56, 5, 0.8)',
     },
     Logo:{
         marginTop: 22,
@@ -49,22 +49,23 @@ export const headerStyles = StyleSheet.create({
         alignItems:'center',
         width: Dimensions.get('window').width * 0.25,
         height: Dimensions.get('window').width * 0.25,
-        marginLeft: Dimensions.get('window').width * 0.069,
+        marginLeft: Dimensions.get('window').width * 0.07,
     },
     LogoContainer:{
-        backgroundColor: 'rgba(142, 113, 10, 0.30)',
-        marginLeft: Dimensions.get('window').width * 0.30,
+        borderColor:'rgba(89, 56, 5, 0.8)',
+        backgroundColor: 'rgba(201,183,169,0.9)',
+        marginLeft: Dimensions.get('window').width * 0.29,
         marginRight: Dimensions.get('window').width * 0.30,
-        borderWidth: 3,
-        borderRadius: 80,
-        borderColor:'rgba(89, 56, 5, 0.7)',
+        borderWidth: 4,
+        borderRadius: 60,
         marginTop: 40,
         height: 150,
+        
     },
     socialButtonContainer:{
         flexDirection: 'row',
         justifyContent: 'space-around',
-       
+        
     },
     socialLogoimg:{
         width: Dimensions.get('window').width * 0.15,
@@ -77,21 +78,21 @@ export const headerStyles = StyleSheet.create({
         height: Dimensions.get('window').width * 0.20,
         marginTop: 20,
         borderRadius: 30,  
-        backgroundColor: 'rgba(142, 113, 10, 0.30)'
+        backgroundColor: 'rgba(201,183,169,0.9)',
     },
     LogoInstagram:{
         width: Dimensions.get('window').width * 0.25,
         height: Dimensions.get('window').width * 0.20,
         marginTop: 20,
         borderRadius: 30,  
-        backgroundColor: 'rgba(142, 113, 10, 0.30)'
+        backgroundColor: 'rgba(201,183,169,0.9)',
     },
     LogoStars:{
         width: Dimensions.get('window').width * 0.25,
         height: Dimensions.get('window').width * 0.20,
         marginTop: 20,
         borderRadius: 30,  
-        backgroundColor: 'rgba(142, 113, 10, 0.30)'
+        backgroundColor: 'rgba(201,183,169,0.9)',
     },
     starsContainer:{
         flexDirection: 'column',
@@ -105,8 +106,9 @@ export const headerStyles = StyleSheet.create({
         height: Dimensions.get('window').width * 0.4,
         borderWidth: 3,
         borderRadius: 60,
-        borderColor:'rgba(142, 113, 10, 0.30)',
-        backgroundColor: 'rgba(142, 113, 10, 0.30)',
+        borderColor:'rgba(89, 56, 5, 0.7)',
+        backgroundColor: 'rgba(201,183,169,0.9)',
+        flexDirection:'row'
         
     },
     FincanLogo:{
@@ -127,14 +129,13 @@ export const headerStyles = StyleSheet.create({
         height: Dimensions.get('window').width * 0.4,
         borderWidth: 3,
         borderRadius: 60,
-        borderColor:'rgba(142, 113, 10, 0.30)',
-        backgroundColor: 'rgba(142, 113, 10, 0.30)',
+        borderColor:'rgba(89, 56, 5, 0.7)',
+        backgroundColor: 'rgba(201,183,169,0.9)',
         marginLeft: Dimensions.get('window').width * 0.1,
     },
     Title:{
         marginTop: 10,
         alignItems:'center',
-        backgroundColor: 'rgba(142, 113, 10, 0.30)',
         padding: 10,
         borderRadius: 40,
         height: Dimensions.get('window').width * 0.12,
@@ -143,6 +144,7 @@ export const headerStyles = StyleSheet.create({
         borderWidth: 3,
         borderRadius: 50,
         borderColor:'rgba(89, 56, 5, 0.7)',
+        backgroundColor: 'rgba(201,183,169,0.6)',
     },
     titleText:{
         fontSize: 18,
@@ -162,7 +164,7 @@ export const headerStyles = StyleSheet.create({
         borderRadius: 10,  
         borderWidth: 3,
         borderColor:'rgba(89, 56, 5, 0.7)',
-        backgroundColor:'rgba(142, 113, 10, 0.30)',
+        backgroundColor: 'rgba(201,183,169,0.6)',
     },
     buttonText:{
         fontSize: 28,
@@ -174,13 +176,14 @@ export const headerStyles = StyleSheet.create({
         
     },
     FalciButton:{
-        marginTop: 14,
+        marginTop: 15,
         width: Dimensions.get('window').width * 0.65,
         height: Dimensions.get('window').width * 0.25,
         borderWidth: 3,
         borderRadius: 20,
-        borderColor:'rgba(142, 113, 10, 0.30)',
-        backgroundColor: 'rgba(142, 113, 10, 0.4)',
+        borderColor:'rgba(89, 56, 5, 0.7)',
+        backgroundColor: 'rgba(201,183,169,0.9)',
+        
     },
     columnContainer: {
         flexDirection: 'column',
@@ -203,6 +206,24 @@ export const headerStyles = StyleSheet.create({
     },
     textLogo:{
         marginLeft:Dimensions.get('window').width * 0.02,
+        width: Dimensions.get('window').width * 0.40,
+        height: Dimensions.get('window').width * 0.20,
+    },
+    kahveText:{
+        marginTop:Dimensions.get('window').width * 0.09,
+        marginLeft:Dimensions.get('window').width * 0.03,
+        width: Dimensions.get('window').width * 0.50,
+        height: Dimensions.get('window').width * 0.20,
+    },
+    cardText:{
+        position:'absolute',
+        top:40,
+        width: Dimensions.get('window').width * 0.50,
+        height: Dimensions.get('window').width * 0.20,
+    },
+    elText:{
+        marginTop:Dimensions.get('window').width * 0.08,
+        marginLeft:Dimensions.get('window').width * 0.03,
         width: Dimensions.get('window').width * 0.40,
         height: Dimensions.get('window').width * 0.20,
     }

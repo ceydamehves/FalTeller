@@ -5,6 +5,9 @@ import GecmisFal from "../screens/GecmisFal";
 import KahveFali from "../screens/KahveFali";
 import KartFali from "../screens/KartFali";
 import ElFali from "../screens/ElFali";
+import Falcilar from "../screens/Falcilar";
+import InfoScreen from "../screens/InfoScreen";
+import PayScreen from "../screens/PayScreen";
 
 import {createAppContainer, createDrawerNavigator ,createBottomTabNavigator} from 'react-navigation';
 
@@ -26,6 +29,15 @@ const AppNavigator = createStackNavigator({
   },
   GecmisFal:{
       screen:GecmisFal
+  },
+  InfoScreen:{
+    screen:InfoScreen
+  },
+  PayScreen:{
+    screen:PayScreen
+  },
+  Falcilar:{
+    screen: Falcilar
   }
 },
 {
